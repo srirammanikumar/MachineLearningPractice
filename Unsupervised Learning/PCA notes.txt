@@ -1,0 +1,51 @@
+What Are Eigenvalues and Eigenvectors?
+The mathematics of PCA isn't really necessary for PCA to be useful. However, it can be useful to fully understand the mathematics of a technique to understand how it might be extended to new cases. For this reason, the page has a few additional references which go more into the mathematics of PCA.
+
+A simple introduction of what PCA is aimed to accomplish is provided here in a simple example.
+
+A nice visual, and mathematical, illustration of PCA is provided in this video by 3 blue 1 brown.
+
+If you dive into the literature surrounding PCA, you will without a doubt run into the language of eigenvalues and eigenvectors. These are just the math-y words for things you have already encountered in this lesson.
+
+An eigenvalue is the same as the amount of variability captured by a principal component, and an eigenvector is the principal component itself. To see more on these ideas, take a look at the following three links below:
+
+A great introduction into the mathematics of principal components analysis.
+
+An example of using PCA in python by one of my favorite data scientists.
+
+An example of PCA from the scikit learn documentation.
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+Dimensionality Reduction and PCA - Lesson Topics
+Phew! That was a ton of information - here is a quick recap!
+
+1. Two Methods for Dimensionality Reduction
+You learned that Feature Selection and Feature Extraction are two general approaches for reducing the number of features in your data. Feature Selection processes result in a subset of the most significant original features in the data, while Feature Extraction methods like PCA construct new latent features that well represent the original data.
+
+2. Dimensionality Reduction and Principal Components
+You learned that Principal Component Analysis (PCA) is a technique that is used to reduce the dimensionality of your dataset. The reduced features are called principal components, or latent features. These principal components are simply a linear combination of the original features in your dataset.
+
+You learned that these components have two major properties:
+
+They aim to capture the most amount of variability in the original dataset.
+They are orthogonal to (independent of) one another.
+3. Fitting PCA
+Once you got the gist of what PCA was doing, we used it on handwritten digits within scikit-learn.
+
+We did this all within a function called do_pca, which returned the PCA model, as well as the reduced feature matrix. You simply passed in the number of features you wanted back, as well as the original dataset.
+
+4. Interpreting Results
+You then saw there are two major parts to interpreting the PCA results:
+
+The variance explained by each component. You were able to visualize this with scree plots to understand how many components you might keep based on how much information was being retained.
+The principal components themselves, which gave us an idea of which original features were most related to why a component was able to explain certain aspects about the original datasets.
+5. Mini-project
+Finally, you applied PCA to a dataset on vehicle information. You gained valuable experience using scikit-learn, as well as interpreting the results of PCA.
+
+With mastery of these skills, you are now ready to use PCA for any task in which you feel it may be useful. If you have a large amount of data, and are feeling afflicted by the curse of dimensionality, you want to reduce your data to a smaller number of latent features, and you know just the way to do it!
+
+6. Do you think you understand PCA well enough yet to explain it in a way that would make sense to your grandmother?
+Here is an interesting StackExchange post that does just that, and with animated graphics! https://stats.stackexchange.com/questions/2691/making-sense-of-principal-component-analysis-eigenvectors-eigenvalues
